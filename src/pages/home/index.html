@@ -1,0 +1,144 @@
+<!-- Este é o arquivo dashboard.html , apenas mudei o nome dele. -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/modals.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Petinfo - home</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <h1>Petinfo</h1>
+        <div class="user">
+            <button id="create-post">Criar publicação</button>
+            <img src="" id="user-img" alt="">
+            <div class="disconnect hidden">
+                <p id="user-disconnect"></p>
+                <button class="btn-loggout" id="disconnect"><img src="./assets/loggout.ico" alt="">Sair da
+                    conta</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="feed-box">
+        <div class="feed">
+            <h3>Feed</h3>
+        </div>
+    </div>
+
+    <main class="container">
+        <ul class="posts-list">
+
+        </ul>
+    </main>
+
+    <div class="created-acc-modal hidden" id="deleted-alert">
+        <div class="created-acc-top">
+            <img src="../register/assets/check-icon.png" alt="">
+            <h3>Post deletado com sucesso!</h3>
+        </div>
+        <h3>O post selecionado para exclusão foi deletado,<br> a partir de agora não aparecerá no seu feed</h3>
+    </div>
+
+
+
+    <div class="modal-bg flex align-center justify-center hidden" id="access-modal">
+        <div class="modal flex flex-col">
+
+            <div class="modal-top flex justify-between align-center">
+                <div class="user-info-modal flex align-center">
+                    <img src="" alt="" id="access-img-modal">
+                    <h4 id="access-name-modal"></h4>
+                    <div>|</div>
+                    <p id="access-date-modal"></p>
+                </div>
+                <button class="close-modal" id="close-access">X</button>
+            </div>
+            <h3 id="access-title-modal"></h3>
+
+            <p id="access-description-modal"></p>
+
+        </div>
+    </div>
+
+    <div class="modal-bg flex align-center justify-center hidden" id="edit-modal">
+        <div class="modal flex flex-col">
+            <div class="modal-top flex justify-between align-center">
+                <h4>Edição</h4>
+                <button class="close-modal" id="close-edit">X</button>
+            </div>
+
+            <div class="edit-form flex flex-col">
+                <label for="edit-title">Título do post</label>
+                <textarea id="edit-title" cols="30" rows="1"></textarea>
+            </div>
+
+            <div class="edit-form flex flex-col">
+                <label for="edit-content">Conteúdo do post</label>
+                <textarea id="edit-content" cols="30" rows="6"></textarea>
+            </div>
+
+            <div class="edit-modal-buttons flex justify-end">
+                <button id="close-edit">Cancelar</button>
+                <button id="save-edited-post">Salvar alterações</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-bg hidden" id="create-modal">
+        <div class="modal">
+            <div class="modal-top">
+                <h4>Criar novo post</h4>
+                <button class="close-modal" id="close-create">X</button>
+            </div>
+
+            <div class="edit-form">
+                <label for="edit-title">Título do post</label>
+                <textarea id="edit-title" cols="30" rows="1" placeholder="Digite o título aqui..."
+                    class="create-title"></textarea>
+
+                <label for="edit-content">Conteúdo do post</label>
+                <textarea id="edit-content" cols="30" rows="5" placeholder="Digite o conteúdo do post aqui..."
+                    class="create-discription"></textarea>
+            </div>
+
+            <div class="edit-modal-buttons">
+                <button id="close-create">Cancelar</button>
+                <button id="post-button">Publicar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-bg hidden" id="delete-modal">
+        <div class="delete-modal">
+            <div class="modal-top">
+                <h4>Confirmação de exclusão</h4>
+                <button class="close-modal" id="close-delete">X</button>
+            </div>
+
+            <div class="delete-modal-alert">
+                <h4>Tem certeza que deseja excluir este post?</h4>
+
+                <p>Essa ação não poderá ser desfeita, então pedimos que tenha cautela antes de concluir</p>
+            </div>
+
+            <div class="delete-modal-buttons">
+                <button id="close-delete">Cancelar</button>
+                <button id="delete-post">Sim, excluir este post</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./posts.js"></script>
+    <script src="./modals.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

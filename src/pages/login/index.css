@@ -1,0 +1,122 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    height: 100vh;
+    gap: var(--gap-4);
+}
+
+.petinfo-brand-section {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: var(--gap-4);
+}
+
+.petinfo-brand {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-3);
+    font-size: 1.875rem;
+}
+
+.petinfo-brand>h1 {
+    font-size: 2.1875rem;
+}
+
+.petinfo-brand>h3 {
+    width: 90%;
+}
+
+.petinfo-brand span {
+    color: var(--brand100);
+}
+
+.petinfo-brand>p {
+    color: var(--gray400);
+    font-size: 1.25rem;
+    width: 80%;
+}
+
+.big-cont {
+    display: flex;
+    gap: var(--gap-5);
+}
+
+.big-cont>img {
+    height: 100%;
+}
+
+.medium-cont {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-5);
+}
+
+.medium-cont>img {
+    height: 100%;
+}
+
+.small-cont {
+    display: flex;
+    gap: var(--gap-5);
+}
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    border: 0.125rem solid var(--gray600);
+    padding: 2.75rem 1.5rem;
+    gap: var(--gap-3);
+    border-radius: var(--radius-2);
+}
+
+.login-section>h3 {
+    font-size: 1.375rem;
+}
+
+.login-section button {
+    height: 2.75rem;
+    width: 100%;
+    border-radius: var(--radius-2);
+    font-size: 0.9375rem;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input>small {
+    color: var(--alert100);
+}
+
+.form-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-4);
+}
+
+.form-bottom>p {
+    font-weight: 600;
+    color: var(--gray100) !important;
+}
+
+.form-bottom p {
+    color: var(--gray400);
+}
+
+.form-bottom :nth-child(4) {
+    border: 0.0625rem solid var(--gray600);
+    background-color: transparent;
+}
+
+.register-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

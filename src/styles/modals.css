@@ -1,0 +1,155 @@
+.modal-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray900);
+    margin: 1.5625rem auto;
+    width: 55%;
+    padding: 1.5rem;
+    border-radius: var(--radius-1);
+    gap: var(--gap-3);
+}
+
+.modal-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-top>h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.close-modal {
+    width: max-content;
+    height: max-content;
+    background-color: var(--gray600);
+    padding: 0.625rem 0.9375rem;
+    color: var(--gray500);
+    font-weight: 600;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: var(--radius-2);
+}
+
+.user-info-modal {
+
+    gap: var(--gap-6);
+}
+
+.user-info-modal>img {
+    border-radius: 50%;
+    height: 2.8125rem;
+
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-6);
+}
+
+.edit-form>label {
+    font-weight: 600;
+    width: max-content;
+}
+
+.edit-form>textarea {
+    background-color: var(--gray700);
+    padding: 0.75rem;
+    resize: none;
+    border-radius: var(--radius-2);
+    border: 0.0625rem solid var(--gray500);
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+}
+
+.edit-modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--gap-5);
+}
+
+.edit-modal-buttons :nth-child(1) {
+    background-color: var(--gray600);
+    padding: 0.75rem 0.9375rem;
+    color: var(--gray400);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    border: none;
+    border-radius: var(--radius-2);
+}
+
+.edit-modal-buttons :nth-child(2) {
+    background-color: var(--brand100);
+    color: var(--gray900);
+    padding: 0.75rem 0.9375rem;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    border: none;
+    border-radius: var(--radius-2);
+}
+
+.delete-modal {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    gap: var(--gap-2);
+    margin-top: 4.375rem;
+    background-color: var(--gray900);
+    margin: 1.5625rem auto;
+    width: 55%;
+    padding: 1.5rem;
+    border-radius: var(--radius-1);
+    gap: var(--gap-3);
+}
+
+.delete-modal-buttons {
+    display: flex;
+    gap: var(--gap-5);
+}
+
+.delete-modal-alert {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-3);
+}
+
+.delete-modal-alert>h4 {
+    font-size: 1.375rem;
+}
+
+.delete-modal-buttons :nth-child(1) {
+    background-color: var(--gray600);
+    padding: 0.75rem 0.9375rem;
+    color: var(--gray400);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    border: none;
+    border-radius: var(--radius-2);
+}
+
+.delete-modal-buttons :nth-child(2) {
+    background-color: var(--alert200);
+    color: var(--gray900);
+    padding: 0.75rem 0.9375rem;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    border: none;
+    border-radius: var(--radius-2);
+}
